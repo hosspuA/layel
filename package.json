@@ -1,0 +1,42 @@
+{
+  "name": "figma-make-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "next build --webpack",
+    "start": "next start",
+    "vercel:build": "next build --webpack",
+    "format": "oxfmt"
+  },
+  "dependencies": {
+    "@vercel/blob": "^2.8.2",
+    "html-react-parser": "^5.2.10",
+    "next": "16.4.3",
+    "react": "19.2.1",
+    "react-dom": "19.2.1",
+    "sharp": "^0.35.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "oxfmt": "^0.2.0",
+    "postcss": "^8.5.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=20.9.0",
+    "pnpm": "^9 || ^10"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp",
+      "esbuild",
+      "unrs-resolver"
+    ]
+  }
+}
